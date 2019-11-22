@@ -1,0 +1,139 @@
+  
+* {
+    box-sizing: border-box;
+    font-family: Helvetica Neue, Helvetica, 
+    Roboto, Droid Sans, Arial, Verdana, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+@media(max-width: 1250px) {
+    html {
+        font-size: 56%;
+    }
+}
+
+@media(max-width: 800px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media(max-width: 500px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+
+
+/*MAIN SECTION */
+.main-container {
+    padding: 1rem;
+}
+.top-container {
+    -webkit-font-smoothing: antialiased;
+    border-bottom: 3px solid #dd0005;
+    
+}
+
+.top-container-title {
+    color: #666;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-left: 4rem;
+    margin-top: 0.75rem;
+}
+
+.top-container__span {
+    text-transform: uppercase;
+}
+
+.middle-grid-container {
+    padding: 1rem;
+}
+
+
+.middle-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    -webkit-font-smoothing: antialiased;
+    grid-gap: 2rem;
+    padding: 2rem 2rem;
+}
+
+
+.single-title__color {
+    color: #dd0005;
+}
+
+.single-thumbnail {
+    width: 100%;
+}
+
+
+.thumb-footer {
+    font-size: 1.25em;
+    text-decoration: none;
+    color: black;
+    margin-left: 0.45rem;
+    position: relative;
+}
+
+.thumb-icon {
+    height: 1.25rem;
+    margin-left: 0.5rem;
+    margin-top: 0.75rem;
+    background-color: white;
+}
+
+
+.bottom-thumb-icon {
+    margin-top: 4.0625rem;
+    height: 5rem;
+    width: 2.25rem;
+    margin-right: 3rem;
+}
+
+.bottom-banner-container {
+    margin-top: 4rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.bottom-banner a {
+    border: 1px solid lightgrey;
+    width: 70rem;
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    grid-gap: 1rem;
+    text-decoration: none;
+} 
+
+.bottom-banner-img {
+    padding: 1rem;
+    width: 15.5rem;
+    margin-right: 3rem;
+}
+
+#banner-bold {
+    font-size: 1.5em;
+    color: black;
+    font-weight: 500;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+
+#banner-text {
+    margin-top: 2rem;
+    color: black;
+
+}
