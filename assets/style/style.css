@@ -1,8 +1,6 @@
-  
 * {
     box-sizing: border-box;
-    font-family: Helvetica Neue, Helvetica, 
-    Roboto, Droid Sans, Arial, Verdana, sans-serif;
+    font-family: Helvetica Neue, Helvetica, Roboto, Droid Sans, Arial, Verdana, sans-serif;
 }
 
 html {
@@ -29,22 +27,23 @@ html {
 }
 
 
-
 /*MAIN SECTION */
+
 .main-container {
     padding: 1rem;
 }
+
 .top-container {
     -webkit-font-smoothing: antialiased;
     border-bottom: 3px solid #dd0005;
-    
+    width: 100vw;
 }
 
 .top-container-title {
     color: #666;
     font-size: 1.6rem;
     font-weight: 700;
-    margin-left: 4rem;
+    margin-left: 9rem;
     margin-top: 0.75rem;
 }
 
@@ -53,19 +52,35 @@ html {
 }
 
 .middle-grid-container {
-    padding: 1rem;
+    padding: 3rem 7rem;
 }
 
+@media(max-width:1024px) {
+    .middle-grid-container {
+        padding: 1rem;
+    }
+}
 
 .middle-grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 2fr));
+    grid-template-rows: 35rem 35rem;
     -webkit-font-smoothing: antialiased;
-    grid-gap: 2rem;
+    grid-gap: 6rem;
     padding: 2rem 2rem;
 }
 
+@media(max-width: 670px) {
+    .middle-grid-wrapper {
+        grid-row-gap: 15rem;
+    }
+}
+
+.single-title,
+.single-title__color {
+    font-size: 3.5rem;
+    margin-bottom: .5rem;
+}
 
 .single-title__color {
     color: #dd0005;
@@ -75,12 +90,12 @@ html {
     width: 100%;
 }
 
-
 .thumb-footer {
-    font-size: 1.25em;
+    font-size: 1.75em;
     text-decoration: none;
     color: black;
-    margin-left: 0.45rem;
+    margin-left: 0rem;
+    margin-top: 1rem;
     position: relative;
 }
 
@@ -90,7 +105,6 @@ html {
     margin-top: 0.75rem;
     background-color: white;
 }
-
 
 .bottom-thumb-icon {
     margin-top: 4.0625rem;
@@ -104,7 +118,6 @@ html {
     text-decoration: none;
     display: flex;
     justify-content: center;
-    
 }
 
 .bottom-banner a {
@@ -113,9 +126,9 @@ html {
     margin-left: 2rem;
     display: grid;
     grid-template-columns: 20% 70% 10%;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     text-decoration: none;
-} 
+}
 
 .bottom-banner-img {
     padding: 1rem;
@@ -131,9 +144,7 @@ html {
     padding: 0;
 }
 
-
 #banner-text {
     margin-top: 2rem;
     color: black;
-
 }
