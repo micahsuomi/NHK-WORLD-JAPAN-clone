@@ -1,0 +1,59 @@
+/*Black footer styles starts here*/
+.black_Footer {
+    background-color: black;
+    color: white;
+    padding: 45px 0 30px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Helvetica Neue,Helvetica,Roboto,Droid Sans,Arial,Verdana,sans-serif;
+    line-height: 1.6;
+
+}
+.block {
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 1280px;
+}
+.tools {
+    display: flex;
+    margin: 0 -30px;
+}
+.app {
+    width: 50%;
+    padding: 0 30px;
+}
+.footer_Heading1 {
+margin: 0 0 24px;
+padding-bottom: 10px;
+border-bottom: 1px solid #444;
+text-decoration-line: none;
+}
+
+.footer_Heading1 a {
+    text-decoration: none;
+}
+
+#nhk_logo {
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+}
+.social_Media {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 5px;
+    
+}
+.icon {
+    text-decoration: none;
+}
+
+#note {
+    margin: 0 0 10px;
+    font-size: 16px;
+    font-weight: normal;
+
+}
+/*Black footer styles ends here*/
