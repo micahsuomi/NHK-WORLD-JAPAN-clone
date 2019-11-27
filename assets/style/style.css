@@ -37,38 +37,36 @@ html {
     align-items: center;
     width: 100%;
     position: relative;
+    padding: 0 0 0 17rem;
+
 
 }
 
 #logo img {
-    width: 162px;
-    height: 13px;
-    margin-left: 15rem;
+    width: 16.2rem;
+    height: 1.3rem;
 }
 
-.links-container {
+.navbar-links-container {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    
+  
 }
 
-.links-wrapper {
-    margin-right: 14rem;
+.navbar-links-wrapper {
+    padding: 0 12rem 0 0;
     display: flex;
     align-items: center;
 }
 
-.lng-btn {
+.navbar-links__lng-btn {
     border: none;
     background: none;
   
 }
 
-
-
-.links-wrapper a {
+.navbar-links-wrapper a {
     text-decoration: none;
     color: black;
     display: flex;
@@ -79,7 +77,7 @@ html {
     font-size: 1.3rem;
 }
 
-.links-wrapper a img {
+.navbar-links-wrapper a img {
     margin-right: .5rem;
 }
 
@@ -87,7 +85,7 @@ html {
     color: #666666;
     font-size: 1em;
     font-weight: 700;
-    margin: 15px 0;
+    margin: 1.5rem 0;
     padding-left: 20px;
 }
 
@@ -95,7 +93,7 @@ html {
 
 .dropdown-menu-container {
     background-color: white;
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
     z-index: 5;
     margin-top: -5rem;
@@ -104,12 +102,14 @@ html {
     
 }
 
+
 .dropdown-menu-top {
     display: flex;
     justify-content: space-between;
     height: 10rem;
     align-items: center;
 }
+
 
 .dropdown-menu-top-logo {
     width: 10%;
@@ -126,7 +126,7 @@ html {
 .dropdown-menu-row {
     display: flex;
     flex-wrap: wrap;
-    padding: 15rem 20rem;
+    padding: 10rem 4rem;
     background-color: white;
     margin-top: -5rem;
 }
@@ -135,10 +135,10 @@ html {
 .dropdown-menu-column {
     width: 30rem;
     font-size: 16px;
-    padding-left: 18px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-top: 60px;
+    padding-left: 1.8rem;
+    padding-right: 3rem;
+    padding-bottom: 5rem;
+    padding-top: 6rem;
     line-height: 3.8;
     
 }
@@ -214,12 +214,13 @@ hr {
 
 .main-container {
     padding: 1rem;
+    width: 100vw;
+
 }
 
 .top-container {
     -webkit-font-smoothing: antialiased;
     border-bottom: 3px solid #dd0005;
-    width: 100%;
     height: 3.5rem;
 }
 
@@ -227,7 +228,7 @@ hr {
     color: #666;
     font-size: 1.6rem;
     font-weight: 700;
-    margin-left: 16rem;
+    padding: 0 0 0 16rem;
     margin-top: 0.75rem;
 }
 
@@ -239,11 +240,6 @@ hr {
     padding: 5rem 14rem;
 }
 
-@media(max-width:1024px) {
-    .middle-grid-container {
-        padding: 1rem;
-    }
-}
 
 .middle-grid-wrapper {
     display: grid;
@@ -254,11 +250,6 @@ hr {
     padding: 2rem 2rem;
 }
 
-@media(max-width: 670px) {
-    .middle-grid-wrapper {
-        grid-row-gap: 15rem;
-    }
-}
 
 .single-title,
 .single-title__color {
@@ -275,7 +266,7 @@ hr {
 }
 
 .thumb-footer {
-    font-size: 1.75em;
+    font-size: 17.5px;
     text-decoration: none;
     color: black;
     margin-left: 0rem;
@@ -344,58 +335,60 @@ hr {
     margin: 0;
     padding: 0;
 }
-.black_Footer {
+.black-footer {
     background-color: black;
     color: white;
-    padding: 4.7rem 1rem;
-    font-size: 24px;
+    padding: 4.7rem 5rem;
+    font-size: 2.4rem;
     font-weight: 700;
     line-height: 1.6;
-    margin-top: 50px;
+    margin-top: 5rem;
+    width: 100vw;
 
 }
-.block {
+.black-footer__block {
     margin: 0 auto;
-    padding: 0 40px;
-    max-width: 1280px;
+    padding: 0 4rem;
 }
-.tools {
+.black-footer__tools {
     display: flex;
     margin: 0 -60px;
 }
-.app {
+.black-footer__app {
     width: 50%;
     padding: 0 1rem;
 }
 
-.footer_Heading1 {
+.black-footer__heading {
 margin: 0 0 10px;
 padding-bottom: 10px;
 border-bottom: 1px solid #444;
-text-decoration-line: none;
+text-decoration: none;
 }
 
-.footer_Heading1 a {
+.black-footer__heading a {
     text-decoration: none;
 }
 
-#nhk_logo {
+
+
+#black-footer__nhklogo {
     border-radius: 5px;
     width: 60px;
     height: 60px;
 }
-.social_Media {
+.black-footer__socialmedia {
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    padding: 5px;
+    width: 5rem;
+    height: 5rem;
+    padding: .5rem;
     
 }
-.icon {
+.black-footer__icon {
     text-decoration: none;
 }
 
-#note {
+#black-footer__note {
     margin: 0 0 10px;
     font-size: 16px;
     font-weight: normal;
@@ -417,15 +410,15 @@ text-decoration-line: none;
 .footer2-nav {
     display: grid;
     background:white;
-    grid-template-columns: 400px 700px auto;
-    grid-template-rows: 100px;
+    grid-template-columns: 40rem 70rem auto;
+    grid-template-rows: 10rem;
 }
 .footer2-nav-logo {
     display: flex;
     flex-direction:row; 
     align-items: top; 
     color:black;
-    font-size: 12px;
+    font-size: 1.2rem;
     margin-top: .5rem;
 }
 
@@ -486,3 +479,111 @@ margin-left:20px ;
 }
 
 /*white footer enf here*/
+
+
+
+@media(min-width: 1280px) {
+    .dropdown-menu-row {
+        padding: 14rem 18rem;
+
+    }
+}
+
+@media(max-width:1024px) {
+
+    .navbar {
+        padding: 0 0 0 2rem;
+
+    }
+   
+    .dropdown-menu-row {
+        padding-top: 45rem;
+    }
+    .dropdown-menu-column {
+        width: 25rem;
+        padding: 2rem;
+    }
+
+    .top-container-title {
+        padding: 0 0 0 1rem;
+
+    }
+    .middle-grid-container {
+        padding: 1rem;
+    }
+
+    .black-footer {
+        padding: 3.7rem 7rem;
+
+    }
+    .white-footer {
+        padding: 0;
+    }
+}
+
+@media(max-width: 768px) {
+
+    
+    .dropdown-menu-row {
+        padding-top: 9rem;
+    }
+    .dropdown-menu-column {
+        width: 43rem;
+    }
+    .middle-grid-wrapper {
+        grid-row-gap: 18rem;
+    }
+
+    .footer2-nav {
+        grid-template-columns: 30rem 65rem;
+    }
+
+    .footer2-nav-link {
+        padding: 0 4rem;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .navbar-links-wrapper {
+        padding: 0 5rem 0 0;
+        
+    }
+
+    .navbar-links__lng-btn img {
+        width: 10px;
+        height: 10px;
+    }
+    .dropdown-menu-row {
+    padding-top: 5rem;
+    }
+
+    .dropdown-menu-column {
+        width: 100%;
+        line-height: 2.9;
+    }
+
+    .middle-grid-wrapper {
+        grid-row-gap: 0;
+        grid-template-rows: 35rem 35rem;
+
+    }
+    .bottom-banner a {
+        width: 49rem;
+    }
+
+    .bottom-banner-img {
+        width: 9.5rem;
+    }
+
+    .black-footer {
+        padding: 3.7rem 5rem;
+    }
+    .footer2-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .footer2-nav-link {
+        padding: 0 0rem;
+    }
+}
