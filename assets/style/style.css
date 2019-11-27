@@ -305,3 +305,75 @@ text-decoration-line: none;
 }
 /*Black footer styles end here*/
 
+
+
+
+
+.white-footer{
+    width: 1080px;
+    background-color:white;
+    color: black
+    padding: 4rem 4.5rem;   
+}
+.footer-container{
+    margin: 20px 60px;
+}
+.footer2-nav {
+    display: grid;
+    padding: 10px;
+    background:white;
+    grid-template-columns: 400px 600px auto;
+    grid-template-rows: 100px;
+}
+.footer2-nav-logo {
+    display: flex;
+    flex-direction:row; 
+    align-items: center; 
+    color:black;
+    font-size: 12px;
+}
+.footer2-nav-logo p {
+margin-left:20px ;
+    
+}
+
+.footer2-nav-link-a li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.footer2-nav-link-b li a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer2-nav-link-a li{
+    display: inline-block;
+    font-size: 1.8rem;
+    margin: 0px 10px 20px 0px;
+    text-decoration: none;
+}
+.footer2-nav-link-b li{
+    font-size: 1.3rem;
+    display: inline-block;
+    margin: 0px 10px 20px 0px;
+}
+.white-footer-hr{
+    width: 125%;
+}
+
+.nhk_logo_footer_black {
+   display: flex;
+   align-items: center;
+   margin: 10px 0px;;
+}
+.nhk_logo_footer_black p {
+    margin-left: 10px;
+}
+
+.copyright{
+    font-size: 11px;
+    color: black;
+}
+
+/*white footer enf here*/
