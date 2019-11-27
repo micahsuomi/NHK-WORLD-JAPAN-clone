@@ -3,99 +3,6 @@
     font-family: Helvetica Neue, Helvetica, Roboto, Droid Sans, Arial, Verdana, sans-serif;
 }
 
-.topnav {
-    display: flex;
-    padding-left: 1em;
-    border-bottom: 0.1px solid black;
-    align-items: center;
-}
-
-#lng-btn {
-    margin-left: auto;
-    padding:2vh;
-    border: none;
-    background: none;
-    ;
-  
-}
-#cnt-btn{
-    border: none;
-    background: none;
-    padding-right: 2vh;
-    width: 5px;
-    
-}
-.logo {
-    width: 160px;
-    height: 11.43;
-    padding-left: 20px;
-}
-.explorehead {
-    color: #666666;
-    font-size: 1em;
-    font-weight: 700;
-    margin: 15px 0;
-    padding-left: 20px;
-}
-
-/*  hidden menu styling goes here
-
-
-row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-
-.column {
-    margin-top: 2%;
-    float: left;
-    width: 19rem;
-   
-    height: 300px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 16 ;
-    padding-left: 40px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    line-height: 1.8;
-      }
-  
-  
- 
-  .row:after {
-   margin-top: 5%;
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .title{
-    margin-top: 2%;
-    margin-left: 3%;
-    margin-bottom: 4%;
-  }
-  
-  .red-letter {
-    color: #dd0005;
-  }
-  
-  .live-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -.5rem;
-    margin-bottom: -.5rem;
-  }
-  
-  .about-us-link {
-    text-decoration: none;
-    color: #000000;
-    margin-top: .8rem;
-  }
-       */
-
-
-
 
 html {
     font-size: 62.5%;
@@ -120,6 +27,188 @@ html {
     }
 }
 
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    padding-left: 1em;
+    border-bottom: 0.1px solid#e6e6e6;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+}
+
+#logo img {
+    width: 162px;
+    height: 13px;
+    margin-left: 15rem;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.links-wrapper {
+    margin-right: 14rem;
+    display: flex;
+    align-items: center;
+}
+
+.lng-btn {
+    border: none;
+    background: none;
+  
+}
+
+
+
+.links-wrapper a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .6rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.links-wrapper a img {
+    margin-right: .5rem;
+}
+
+.explorehead {
+    color: #666666;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+/* DROPDOWN MENU */
+
+.dropdown-menu-container {
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    z-index: 5;
+    margin-top: -5rem;
+    position: fixed;
+    animation: moveDown 0.5s;
+    
+}
+
+.dropdown-menu-top {
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+    align-items: center;
+}
+
+.dropdown-menu-top-logo {
+    width: 10%;
+    height: 10%;
+    margin-left: 4.5rem;
+}
+
+.dropdown-menu-top-exit {
+    width: 3%;
+    margin-right: 5rem;
+    cursor: pointer;
+}
+
+.dropdown-menu-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15rem 20rem;
+    background-color: white;
+    margin-top: -5rem;
+}
+
+
+.dropdown-menu-column {
+    width: 30rem;
+    font-size: 16px;
+    padding-left: 18px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-top: 60px;
+    line-height: 3.8;
+    
+}
+hr {
+    color: lightgray;
+    opacity: .6;
+}
+.dropdown-menu-column-header {
+    font-weight: 800;
+}
+  
+  
+ 
+  .row:after {
+   margin-top: 5%;
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .title{
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-bottom: 4%;
+  }
+  
+  .red-letter {
+    color: #dd0005;
+  }
+  
+  .live-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -.5rem;
+  }
+  
+  .about-us-link {
+    text-decoration: none;
+    color: #000000;
+    margin-top: .8rem;
+
+  }
+
+
+  /* DROPDOWN HIDE/SHOW AND ANIMATIONS */
+ .hide {
+     display: none;
+     animation: scale;
+     background-color: transparent;
+
+
+ }
+
+  @-webkit-keyframes moveDown {
+    from {top: -50rem;}
+    to {top: 1rem;}
+    from {opacity: 0;}
+    to {opacity: 1;}
+    
+  }
+  
+  @keyframes moveDown {
+    from {top: -50rem;}
+    to {top: 1rem;}
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
 
 /*MAIN SECTION */
 
@@ -130,14 +219,15 @@ html {
 .top-container {
     -webkit-font-smoothing: antialiased;
     border-bottom: 3px solid #dd0005;
-    width: 100vw;
+    width: 100%;
+    height: 3.5rem;
 }
 
 .top-container-title {
     color: #666;
     font-size: 1.6rem;
     font-weight: 700;
-    margin-left: 9rem;
+    margin-left: 16rem;
     margin-top: 0.75rem;
 }
 
@@ -146,7 +236,7 @@ html {
 }
 
 .middle-grid-container {
-    padding: 3rem 7rem;
+    padding: 5rem 14rem;
 }
 
 @media(max-width:1024px) {
@@ -157,10 +247,10 @@ html {
 
 .middle-grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 2fr));
-    grid-template-rows: 35rem 35rem;
+    grid-template-columns: repeat(auto-fit, minmax(42rem, 2fr));
+    grid-template-rows: 43rem 43rem;
     -webkit-font-smoothing: antialiased;
-    grid-gap: 6rem;
+    grid-gap: 8rem;
     padding: 2rem 2rem;
 }
 
@@ -200,13 +290,6 @@ html {
     background-color: white;
 }
 
-.bottom-thumb-icon {
-    margin-top: 4.0625rem;
-    height: 5rem;
-    width: 2.25rem;
-    margin-right: 3rem;
-}
-
 .bottom-banner-container {
     margin-top: 4rem;
     text-decoration: none;
@@ -216,11 +299,12 @@ html {
 
 .bottom-banner a {
     border: 1px solid lightgrey;
-    width: 70rem;
+    width: 100rem;
     margin-left: 2rem;
+    padding: 2rem;
     display: grid;
-    grid-template-columns: 20% 70% 10%;
-    grid-gap: 2rem;
+    grid-template-columns: 20% 77% 3%;
+    grid-gap: 0;
     text-decoration: none;
 }
 
@@ -231,17 +315,30 @@ html {
 }
 
 #banner-bold {
-    font-size: 1.5em;
+    font-size: 2.4em;
     color: black;
     font-weight: 500;
     margin-top: 1rem;
     padding: 0;
 }
 
-#banner-text {
-    margin-top: 2rem;
-    color: black;
+.bottom-thumb-icon {
+    margin-top: 4.8rem;
+    height: 6rem;
+    width: 3rem;
+    margin-right: 3rem;
 }
+
+.banner-text {
+    padding: 0 1rem;
+}
+#banner-text {
+    margin-top: 1rem;
+    color: black;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
 /*Black footer styles start here*/
 * {
     margin: 0;
@@ -250,7 +347,7 @@ html {
 .black_Footer {
     background-color: black;
     color: white;
-    padding: 4rem 4.5rem;
+    padding: 4.7rem 1rem;
     font-size: 24px;
     font-weight: 700;
     line-height: 1.6;
@@ -268,8 +365,9 @@ html {
 }
 .app {
     width: 50%;
-    padding: 0 30px;
+    padding: 0 1rem;
 }
+
 .footer_Heading1 {
 margin: 0 0 10px;
 padding-bottom: 10px;
@@ -306,37 +404,43 @@ text-decoration-line: none;
 /*Black footer styles end here*/
 
 
-
-
-
 .white-footer{
-    width: 1080px;
     background-color:white;
-    color: black
-    padding: 4rem 4.5rem;   
+    color: black;
+    padding: 1rem 12.6rem;   
 }
+
 .footer-container{
     margin: 20px 60px;
 }
+
 .footer2-nav {
     display: grid;
-    padding: 10px;
     background:white;
-    grid-template-columns: 400px 600px auto;
+    grid-template-columns: 400px 700px auto;
     grid-template-rows: 100px;
 }
 .footer2-nav-logo {
     display: flex;
     flex-direction:row; 
-    align-items: center; 
+    align-items: top; 
     color:black;
     font-size: 12px;
+    margin-top: .5rem;
+}
+
+.footer2-nav-logo a img {
+    height: 4.4rem;
+    width: 4.4rem;
 }
 .footer2-nav-logo p {
 margin-left:20px ;
     
 }
 
+.footer2-nav-link {
+    padding: 0 6rem;
+}
 .footer2-nav-link-a li a{
     text-decoration: none;
     color: black;
@@ -359,7 +463,7 @@ margin-left:20px ;
     margin: 0px 10px 20px 0px;
 }
 .white-footer-hr{
-    width: 125%;
+    width: 100%;
 }
 
 .nhk_logo_footer_black {
@@ -367,6 +471,11 @@ margin-left:20px ;
    align-items: center;
    margin: 10px 0px;;
 }
+
+.nhk_logo_footer_black img {
+    width: 70%;
+}
+
 .nhk_logo_footer_black p {
     margin-left: 10px;
 }
