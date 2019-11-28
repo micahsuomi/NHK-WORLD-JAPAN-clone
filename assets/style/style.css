@@ -339,7 +339,7 @@ hr {
     background-color: black;
     color: white;
     padding: 4.7rem 19rem;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.6;
     margin-top: 5rem;
@@ -363,6 +363,7 @@ margin: 0 0 10px;
 padding-bottom: 10px;
 border-bottom: 1px solid #444;
 text-decoration: none;
+width: 92%;
 }
 
 .black-footer__heading a {
@@ -389,7 +390,7 @@ text-decoration: none;
 
 #black-footer__note {
     margin: 0 0 10px;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: normal;
 
 }
