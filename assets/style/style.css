@@ -338,13 +338,12 @@ hr {
 .black-footer {
     background-color: black;
     color: white;
-    padding: 4.7rem 5rem;
+    padding: 4.7rem 19rem;
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 1.6;
     margin-top: 5rem;
     width: 100vw;
-
 }
 .black-footer__block {
     margin: 0 auto;
